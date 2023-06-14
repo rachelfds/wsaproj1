@@ -1,0 +1,540 @@
+/* commonn style start*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+button,
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.fullContainer {
+    width: 100%;
+}
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+/*.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid orange;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}*/
+
+
+/*common sytle end*/
+
+/* home section start*/
+
+header{
+    width: 100%;
+    background-color: orange;
+    position: fixed;
+    z-index: 2;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .logo{
+    padding: 5px 0;
+    height: 75px;
+}
+
+header .container .logo img{
+    height: 100% ;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: black;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover{
+    background-color: whitesmoke;
+}
+
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/bgimg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    
+}
+
+.banner h1{
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 3.5rem;
+    color: whitesmoke;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 400;
+}
+
+.banner p{
+    color: whitesmoke;
+    width: 100%;
+    text-shadow: 0 0 2px black;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.banner button{
+    background-color: green;
+    border: 0;
+    outline: none;
+    color: whitesmoke;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+section{
+    padding: 100px 0;
+    position: relative;
+    
+}
+
+/*home section end*/
+
+/*About Us start*/
+.section{
+    width: 100%;
+    min-height: 80vh;
+}
+.sect-container{
+    width: 95%;
+    display: block;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+}
+.content{
+    float: left;
+    width: 65%;
+}
+.image-section{
+    float: right;
+    width: 30%;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.sect-container .title{
+    text-transform: uppercase;
+    font-size: 24px;
+    color: orange;
+}
+.sect-container .content h3{
+    margin-top: 12px;
+    color: blue ;
+    font-size: 21px;
+}
+.sect-container .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.sect-container .content .button{
+    margin: 30px;
+}
+.sect-container .content .button a{
+    background-color: orange;
+    padding: 8px 25px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+.sect-container .content .button a:hover{
+    background-color: #350f0f;
+}
+/* services section start*/
+
+.service{
+    background-color: aliceblue;
+}
+.service .container .sectionTitle{
+    color: orange;
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.service .boxContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.service .boxContainer .box{
+    background-color: whitesmoke;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+}
+.service .boxContainer .box .programTitle{
+    font-weight: bold;
+    text-decoration-line:underline;
+    color: blue;
+}
+.service .boxContainer .box .cardImage{
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+.service .boxContainer .box .cardImage::after{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.service .boxContainer .box:nth-child(1) .cardImage,
+.service .boxContainer .box:nth-child(1) .cardImage::after{
+    background-image: url(./images/IMAGE\ \(1\).png);
+}
+.service .boxContainer .box:nth-child(2) .cardImage,
+.service .boxContainer .box:nth-child(2) .cardImage::after{
+    background-image: url(./images/14.png);
+}
+.service .boxContainer .box:nth-child(3) .cardImage,
+.service .boxContainer .box:nth-child(3) .cardImage::after{
+    background-image: url(./images/6.png);
+}
+.service .boxContainer .box:nth-child(4) .cardImage,
+.service .boxContainer .box:nth-child(4) .cardImage::after{
+    background-image: url(./images/8.png);
+}
+.service .boxContainer .box:nth-child(5) .cardImage,
+.service .boxContainer .box:nth-child(5) .cardImage::after{
+    background-image: url(./images/5.png);
+}
+.service .boxContainer .box:nth-child(6) .cardImage,
+.service .boxContainer .box:nth-child(6) .cardImage::after{
+    background-image: url(./images/15.png);
+}
+
+.service .boxContainer .box:hover .cardImage::after{
+    top: 100%;
+}
+/* services section end*/
+
+/*gallery start here*/
+
+.gallery .galleryContainer{
+    column-count: 4;
+    column-gap: 20px;
+    background-color: whitesmoke;
+}
+.gallery .sectionTitle{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: orange;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.gallery .galleryContainer .item{
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gallery .galleryContainer img {
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+
+.gallery .galleryContainer .title {
+    position: absolute;
+    background-color: gray;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.gallery .galleryContainer .item:hover .title{
+    opacity: 1;
+}
+.gallery .galleryContainer .item:hover img{
+    transform: scale(1.2);
+}
+
+/*gallery end here*/
+
+
+/*donate start here*/
+.don-sec{
+    background-color: #e6edff;
+    padding: 200px 0;
+    
+}
+.don-sec .container .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.don-sec .don-box{
+    margin: 75px 0;
+    background-color: #fff;
+    padding: 2%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #b4afaf;
+    transition: all 1s;
+    height: 80%;  
+    
+}
+
+.don-sec .don-box img{
+    width: 70px;
+    transition: all 1s;
+    
+  
+}
+
+.don-sec .don-box h3{
+    margin: 15px 0 10px;
+    
+ 
+}
+
+.don-sec .don-box p{
+    margin-bottom: 75px;
+    
+}
+
+.don-sec .don-box:hover img{
+    transform: scale(1.1);
+    
+}
+
+
+/* Join Section starts here*/
+
+.join{
+    background-color: aliceblue ;
+}
+
+.join .joinTitle{
+    font-size: 40px;
+    font-weight: bold;
+    color: orange;
+}
+.join button{
+    padding: 7px 15px;
+    margin-top: 20px;
+    border: 0;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    margin-right: 10px;
+    color: blue;
+    display: block;
+    margin: 0 auto 50px;
+    
+}
+.join p{
+    width: 80%;
+    display: block;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    
+}
+
+/* Join Section ends here*/
+
+/*footer starts here*/
+footer{
+    background-color: green;
+    color: #000;
+    padding: 50px 0;
+    font-size: 14px;
+}
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 50px;
+}
+
+footer .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    margin-bottom: 20px;
+    padding: 0 0 5px 0;
+}
+footer p{
+    margin-bottom: 10px;
+}
+
+footer .linksContainer ul{
+    list-style-type: none;
+}
+footer .linksContainer ul li a{
+    text-decoration: none;
+    color: #7f7f7f;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+footer .newsLetterContainer input{
+    background-color: transparent;
+    border: 1px solid #7f7f7f;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    color: #ccc;
+    border-radius: 30px;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+.copywrite{
+    text-align: center;
+}
+
+/*footer end here*/
+
+.location{
+    width: 80%;
+    margin:auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.contact-col div p{
+    padding: 0;
+} 
+.contact-col div h5{
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: blue;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* responsive code starts here*/
+
+@media screen and (max-width: 1140px){
+    .container{
+        width: 100%;
+        padding: 0 15px;
+
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .banner h1{
+        margin-top: 200px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .banner{
+        background-position-x: 45%;
+    }
+    .banner h1{
+        font-size:2.5rem;
+    }
+    .service .boxContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* responsive code ends here*/
